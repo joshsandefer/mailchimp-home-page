@@ -1,5 +1,8 @@
 html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100%;
+    border-left: 10px solid #ffe01c;
+    border-right: 300px solid #ffe01c;
 }
 
 body {
@@ -11,11 +14,23 @@ h1 {
 }
 
 .container {
-    border-left: 10px solid rgb(245, 245, 0);
+    /* border-left: 10px solid #ffe01c;
+    border-right: 300px solid #ffe01c; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.header {
+    display: flex;
+    margin: 10px 0 20px 20px;
+    align-self: flex-start;
+}
+
+img {
+    max-height: 40px;
+    width: auto;
 }
 
 .signup-form {
@@ -50,15 +65,15 @@ form {
     /* margin: 20px 0 20px 0; */
 }
 
-.checkbox {
-    /* margin-right: 20px; */
+input.checkbox {
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: teal;
+    border: 3px solid teal;
 }
 
-.header {
-    display: flex;
-    height: 50px;
-    margin-bottom: 20px;
-}
+
 
 .bottom-section {
     display: flex;
@@ -67,7 +82,13 @@ form {
 }
 
 .button {
-    width: 50px;
-    background-color: green;
+    width: 150px;
+    height: 50px;
+    background-color: teal;
+    margin-right: 20px;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    font-weight: 600;
 }
 
